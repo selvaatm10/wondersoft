@@ -1,0 +1,124 @@
+<!-- nav section start -->
+<div class="nav-sec d-flex">
+    <div class="nav-left col-2 d-flex">
+        <div class="nav-logo">
+            <img src="../assets/img/amazon-logo.png" alt="">
+        </div>
+        <div class="nav-location d-flex">
+            <div>
+                <span class="pi" id="nav-packard-glow-loc-icon"></span>
+            </div>
+            <div>
+                <p>Hello</p>
+                <h5>Select your address</h5>
+            </div>
+        </div>
+    </div>
+    <div class="nav-cen col-6 d-flex">
+        <div class="nav-item dropdown">
+            >
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+        <div>
+            <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid">
+                    <form class="d-flex">
+                        <input class="form-control me-2" style="width: 450px;" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="nav-right col-4 d-flex">
+        <div class="row c-white">
+            <div class="col-2">
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle c-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        All
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="nav-item dropdown">
+                    <p>Hello,sign in</p>
+                    <a class="nav-link dropdown-toggle india-loc c-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Account&lists
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-6 d-flex">
+                <!-- <p>Hello</p> -->
+                <h5 style="padding-top: 15px;">Return & orders</h5>
+            </div>
+            <!-- <div class="col-3 ">
+                <p class="bg-light"></p>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- nav section start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">WonderSoft</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" routerLink="home" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a [routerLink]="['/service','deveolopment']">Developemnt</a></li>
+            <li><a [routerLink]="['/service','testing']">Testing </a></li>
+            <li><a [routerLink]="['/service','deployment']">Deployment </a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+<router-outlet></router-outlet>

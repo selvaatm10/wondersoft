@@ -1,0 +1,114 @@
+
+
+/* nav section start */
+.c-white{
+    color: white;
+}
+.col-6{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.col-3{
+    padding: 0 0;
+}
+.jc-se{
+    display: flex;
+    justify-content: space-evenly;
+}
+.fd-col{
+    display: flex;
+    flex-direction: column;
+}
+.nav-sec{
+    background-color: #212529;
+    height: 54px;
+}
+.nav-logo img{
+    height: 54px;
+    width: 93px;
+}
+p{
+    margin-bottom: 0px;
+}
+.nav-location p{
+    color: #ccc;
+}
+.nav-location h5{
+    color: white;
+}
+
+.nav-cen a{
+    color: white;
+    background-color: #ccc;
+    padding: 15px;
+}
+.nav-right .nav-item .india-loc{
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+/* nav section start */
+
+/* card section start  */
+.card-section-1{
+    margin-top: 40px;
+}
+.card-section-2{
+    margin-top: 40px;
+}
+.card{
+    width: 23%;
+    border: none;
+}
+.card button{
+    background-color: rgb(231, 170, 38);
+    border-radius: 10px;
+    width: 200px;
+    margin-left: 55px;
+}
+.card img{
+    width: 150px;
+}
+.full-img img{
+    width: 306px;
+     height: 278px;
+}
+.half-img img{
+    width: 334px;
+    margin-top: 13px;
+}
+/* card section end  */
+
+/* carousel-item start  */
+.carousel-item img{
+    width: 200px;
+}
+/* carousel-item end  */
+
+/* footer section start  */
+footer button{
+    width: 100%;
+    height: 50px;
+    background-color: #37475a;
+}
+footer{
+    background-color: #232f3e;
+}
+.foot-content{
+    width: 300px;
+}
+.foot-items{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.foot-items ul{
+    font-weight: 700;
+    color: #FFF;
+    font-size: 19px;
+}
+.foot-items li{
+    color: #DDD;
+    font-size: 15px;
+
+}
+/* footer section end  */

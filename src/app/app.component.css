@@ -1,0 +1,33 @@
+/* nav section start */
+.c-white{
+    color: white;
+}
+.nav-sec{
+    background-color: #212529;
+    height: 54px;
+}
+.nav-logo img{
+    height: 54px;
+    width: 93px;
+}
+p{
+    margin-bottom: 0px;
+}
+.nav-location p{
+    color: #ccc;
+}
+.nav-location h5{
+    color: white;
+}
+
+.nav-cen a{
+    color: white;
+    background-color: #ccc;
+    padding: 15px;
+}
+.nav-right .nav-item .india-loc{
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+/* nav section start */
