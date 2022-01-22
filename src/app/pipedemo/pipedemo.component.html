@@ -1,0 +1,46 @@
+<p>pipedemo works!</p>
+
+<h4>
+    // string pipe <br><br>
+    {{str}} <br>
+
+    {{str | uppercase}} <br>
+    {{str | lowercase}} <br>
+    {{str | titlecase}} <br>
+    {{str | slice:3:13}} <br>
+
+</h4>
+
+<hr> 
+    // date format pipe <br><br>
+
+    {{d1}} <br>
+    {{d1 | date}} <br>
+    {{ d1 | date | uppercase}} <br>
+    {{ d1 | date: 'dd/MM/yyyy'}} <br>
+    {{ d1 | date: 'MM/dd/yy'}}
+
+<hr>
+    //currency format <br><br>
+
+    {{amount}} <br>
+    {{amount | currency}} <br>
+    {{amount | currency: 'INR'}} <br>
+    {{amount | currency: 'JPN'}} <br>
+    {{amount | currency: 'SAR'}} <br>
+    {{amount | currency: 'EUR'}} <br>
+    {{amount | currency: 'USD'}} <br>
+<hr>
+    //object pipe <br><br>
+
+    {{emp}} <br>
+    {{emp | json}}
+
+<hr>
+     custom pipe <br><br>
+
+    {{3 | sqr}} <br>
+    {{4 | cub}}
+
+<hr>
+

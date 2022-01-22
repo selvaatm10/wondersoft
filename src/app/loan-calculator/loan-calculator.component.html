@@ -1,0 +1,67 @@
+<div style="background-color: #cccc;">
+    <div class="container" style="padding-top: 30px;">
+        <div class="row">
+            <div class="col-6" style="text-align: right;">
+                <h2>loan-calculator</h2><br>
+                
+            </div>
+            <div class="col-6" style="text-align: right;">
+                <h2>Deposit-calculator</h2><br>
+                <div class="container">
+                    <div class="mb-3">
+                        <label for="invest_amount" class="form-label">Investment Amount :</label>
+                        <input type="text" class="form-control" name="" id="invest_amount" placeholder="" class="w-50"
+                            #iAmount>
+                    </div>
+                    <div class="mb-3">
+                        <label for="interest" class="form-label">Interest :</label>
+                        <select class="form-control" name="" id="interest" class="w-50" #interest>
+                            <option value="">Select</option>
+                            <option value="5">7</option>
+                            <option value="8">8</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="duration" class="form-label">Duration :</label>
+                        <input type="text" class="form-control" name="" id="duration" placeholder="Enter the Months" class="w-50" #duration>
+                    </div>
+                    <div>
+                        <button type="text" class="btn btn-primary"
+                            (click)="calculateValue(iAmount.value, duration.value, interest.value)"
+                            style="margin-right: 54px;">Calculate</button><br><br>
+                        <div class="payment">
+                            <div class="total">
+                                <label for="">Total :</label>
+                                <input type="text" name="" id="" value="{{total1}}" disabled><br><br>
+                            </div>
+                            <!-- <div class="total">
+                                <label for="">Compound :</label>
+                                <input type="text" name="" id="" value="{{total2}}" disabled>
+                            </div> -->
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+<br>
+
+<div style="text-align: center;">
+    <h2>Background color</h2><br>
+    <select [(ngModel)]="value" [style.background-color]="value" style="width: 180px;">
+        <option value="">Select color</option>
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+    </select>
+</div>
+
+<br>
+<br>
+<br>
+</div>
+
+

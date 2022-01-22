@@ -1,0 +1,26 @@
+<h2>loan-calculator</h2><br>
+<form action="">
+    <label for="">Principle Amount :</label>
+    <input type="number" #princ id="" placeholder="Enter the Amount"><br><br>
+    <label for="cars">Choose a loan type :</label>
+    <select [(ngModel)]="value" [ngModelOptions]="{standalone: true}" #loanType style="width: 187px;">
+        <option>Select</option>
+        <option value="9">Car :9%</option>
+        <option value="10">Per :10%</option>
+        <option value="11">Gold :11%</option>
+    </select>
+    <br><br>
+    <label for="">ROI :</label>
+    <input type="number" value="{{value}}" #roi disabled placeholder="Rate of Interest"><br><br>
+    <label for="">Time :</label>
+    <input type="number" #time placeholder="Enter the Months"><br><br>
+
+    <input type="button" (click)="submit(princ.value,roi.value,time.value)" class="btn btn-primary" value="calculate"
+        style="margin-right: 54px;"><br><br>
+
+
+    <label for="">Total :</label>
+    <input type="text" name="" id="" value="{{total}}" disabled> <br><br>
+    <label for="">Emi :</label>
+    <input type="text" name="" id="" value="{{emi}}" disabled>
+</form>
