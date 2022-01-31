@@ -36,6 +36,7 @@ import { LifecyclehooksComponent } from './lifecyclehooks/lifecyclehooks.compone
 import { TDFComponent } from './tdf/tdf.component';
 import { RDFComponent } from './rdf/rdf.component';
 import { PracticeComponent } from './practice/practice.component';
+import { ChatBoxComponent } from './chat-box/chat-box.component';
 
 
 @NgModule({
@@ -71,6 +72,7 @@ import { PracticeComponent } from './practice/practice.component';
     TDFComponent,
     RDFComponent,
     PracticeComponent,
+    ChatBoxComponent,
   ],
   imports: [
     BrowserModule,

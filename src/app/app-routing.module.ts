@@ -80,8 +80,16 @@ const routes: Routes = [
   {
     path:'app-loan-calculator',
     component:LoanCalculatorComponent
+  },
+  // {
+  //   path:'',
+  //   pathMatch:'full',
+  //   redirectTo:'home'
+  // },
+  {
+    path:'**',
+    redirectTo:'signin'
   }
-  
 ];
 
 

@@ -10,13 +10,17 @@ export class KumarComponent implements OnInit {
 
   constructor(private cs:ChatservService) { }
 
+  receiveData:any = [];
+
   ngOnInit(): void {
+
+    this.receiveData = this.cs.chatmsgs
+    
+    }
+
+  msgs1:any=[]
+
+  send1(mymsg1:any){
+    this.msgs1 = this.cs.chat1(mymsg1)
   }
-
-  msgs:any=[]
-
-  send(mymsg:any){
-    this.msgs = this.cs.chat(mymsg)
-  }
-
 }

@@ -2,10 +2,12 @@
 
 
 <div>
-    <input type="text" name="" id="" value={{dbservname}}>
-    <input type="button" name="" id="" (click)="abc()">
+    <input type="text" value={{dbservname}}>
+    <input type="button" name="" value="click" id="" (click)="abc()">
 
-
-    <input type="text" name="" id="" value={{dbservpass}}>
-    <input type="button" name="" id="" (click)="ddd()">
+    <input type="text" #rname>
+    <input type="button" value="click" (click)="zzz(rname.value)">    
+    <!-- <input type="text" name="" id="" value={{dbservpass}}>
+    <input type="button" name="" id="" value="click" (click)="ddd()"> -->
 </div>
+

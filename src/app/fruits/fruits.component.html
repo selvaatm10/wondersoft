@@ -1,47 +1,51 @@
-<!-- <p>fruits works!</p>
+<p>fruits works!</p>
 
+<input type="text" #fruit>:
+<input type="button" value="Add Fruit " (click)="addfruit(fruit.value)">
 
-<input type="text" #fruit>:<input type="button" value="Add Fruit " (click)="addfruit(fruit.value)">
 <ol>
     <li *ngFor="let fruitnames of fruits ">
             {{fruitnames}}
     </li>
 </ol>
 
+<!-- days:Array<string>=["Sunday","Moday","Tuesday","Wednesday","Thrusday","Friday","Saturday"]; -->
 
-<div *ngFor="let day of days" >
-    <div *ngIf="day=='Sunday' || day=='Saturday' ; else elseBlock">
+
+<div *ngFor = "let day of days" >
+    <div *ngIf="day=='Sunday' || day=='Saturday' ; else abc">
         <h1>{{day}}: is weekend </h1>
     </div>
-    <ng-template #elseBlock>
+    <ng-template #abc>
         <h1> {{day}}: week days </h1>
     </ng-template>
 </div>
 
-<div [ngClass]="{bgc:true,bdr:true}">
+<div [ngClass]="{ bgc:true,bdr:true }">
     <h1>hii</h1>
 </div>
 
-<div [ngStyle]="{'color':clr}">
+<div [ngStyle]="{'color':abc}">
     <h1>Ng-style</h1>
-</div> -->
+</div>
 
-<!-- <div>
+
+<div>
     <select [(ngModel)] = "value" [style.background-color]="value">
         <option value="blue">Blue</option>
         <option value="red">Red</option>
         <option value="green">Green</option>
     </select>
-</div> -->
+</div>
 
-<!--
-<select (click)="font(val)" [(ngModel)] = "val">
+
+<!-- <select (click)="font(val)" [(ngModel)] = "val">
     <option value="blue">Blue</option>
     <option value="red">Red</option>
     <option value="green">Green</option>
-</select> -->
+</select>
 
-<!-- <div [ngStyle] = "{'backround-color':clrrr}">
+<div [ngStyle] = "{'backround-color':clrrr}">
 <h6>Hii</h6>
 
 <select (change)="myClr(color.value)" #color>
@@ -52,5 +56,4 @@
 
 </div> -->
 
-
-<br>
+<br><br>

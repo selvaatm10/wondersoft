@@ -1,6 +1,12 @@
-selva : <input type="text" name="" id="" #mymsg>
-<input type="button" name="" id="" value="send" (click)="send(mymsg.value)">
 
-<p *ngFor="let msg of msgs">
-    {{msgs}}
+selva : <input type="text" name="" id="" #mymsg>
+<input type="button" name="" id="" value="send" (click)="send(mymsg.value)"> <br>
+
+
+<h1 *ngFor="let msg of msgs" style="padding-left: 50px;">
+    {{msg}}
+</h1>
+
+<p *ngFor="let msg1 of receiveData">
+    {{msg1}}
 </p>

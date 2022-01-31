@@ -19,7 +19,10 @@ export class DemoservService {
     this.pass = mypass
   } 
 
+  name2 = '';
+  yyy(rname:any){
+    this.name2 = rname;
+  }
 
- 
 
 }

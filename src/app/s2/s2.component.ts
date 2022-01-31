@@ -23,4 +23,8 @@ export class S2Component implements OnInit {
     this.dbservpass = this.dblogin.pass;
   }
 
+  zzz(rname:any){
+    this.dblogin.yyy = rname;
+  }
+
 }

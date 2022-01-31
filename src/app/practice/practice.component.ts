@@ -12,4 +12,14 @@ export class PracticeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  print: any;
+  submit(name: any) {
+    console.log("name :" + name);
+    this.print = name
+  }
+
+  Myname: string = ""
+
+  names:Array<string> = ["selva","kumar","raj","gold"];
+
 }

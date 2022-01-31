@@ -1,1 +1,37 @@
 <p>practice works!</p>
+
+<h5>one way</h5>
+
+<input type="text" #name> <br>
+<input type="submit" (click)="submit(name.value)"> <br>
+
+{{print}}
+
+ <br> <br>
+
+ <h5>two way</h5>
+
+<input type="text" [(ngModel)] = "Myname"> <br>
+<input type="text" value="{{Myname}}">
+
+<br><br>
+
+<h5>Ngfor</h5>
+
+<div *ngFor="let name of names">
+    <div *ngIf="name == 'selva' || name == 'kumar' ; else elsePart">
+        <p>{{name}}: is valid</p>
+    </div>
+    <ng-template #elsePart>
+         <p>{{name}}: is invalid</p>
+    </ng-template>
+</div>
+
+<br><br>
+
+<h5>Bank</h5>
+
+
+
+
+

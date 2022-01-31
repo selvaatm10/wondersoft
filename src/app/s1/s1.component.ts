@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+// import { time } from 'console';
+// import { DemoservService } from '../demoserv.service';
 import { DemoservService } from '../demoserv.service';
 
 @Component({
@@ -23,6 +25,10 @@ export class S1Component implements OnInit {
   aaa(mypass:any){
     this.dblogin.bbb(mypass)
   }
-  
 
+  name2:any = '';
+  xxx(rname:any){
+    this.name2 = this.dblogin.yyy(rname)
+  }
+  
 }

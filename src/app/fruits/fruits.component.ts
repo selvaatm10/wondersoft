@@ -12,7 +12,7 @@ export class FruitsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  clr:string = "red"
+  abc:string = "green"
 
   mycondition=true;
   fruits:Array<string>=["Apple","Banana","Cikku","PineApple"];
@@ -24,24 +24,29 @@ export class FruitsComponent implements OnInit {
   days:Array<string>=["Sunday","Moday","Tuesday","Wednesday","Thrusday","Friday","Saturday"];
 
 
+  // *ngFor(let a of days){
+  //   *ngIf==a=="sunday" || "saturaday" {
+  //     console.log(weekend)
+  //   } 
+  // }
 
   value="";
-  // val="";
-  // color(value:any){
-  //   document.body.style.backgroundColor = value;
-  // }
-  // font(val:any){
-  //   document.body.style.backgroundColor = val;
-  // }
+  val="";
+  color(value:any){
+    document.body.style.backgroundColor = value;
+  }
+  font(val:any){
+    document.body.style.backgroundColor = val;
+  }
 
-  // clrrr:string =""
+  clrrr:string =""
 
-  // myClr(color:string){
-  //   this.clrrr = color;
-  //   if(color=""){
-  //     this.clrrr = color
-  //   }
-  // }
+  myClr(color:string){
+    this.clrrr = color;
+    if(color=""){
+      this.clrrr = color
+    }
+  }
 
 
 }
